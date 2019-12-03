@@ -51,7 +51,37 @@
     a:hover{
         color: chartreuse;
     }
+
+
+    .avatar{
+
+        border-radius: 50%;
+        border:5px solid white;
+        animation: rot 3s;
+
+
+    }
+
+    .call{
+        background-color: #173232;
+        padding:5px;
+        border-radius: 50px;
+        animation:pulse 0.5s 6;
+        animation-delay:1s;
+    }
+
+
+    @keyframes rot{
+        from{transform: translateX(-1000px) rotate(0deg);}
+        to{ transform: translateX(0px)rotate(720deg);}
+    }
     
+     @keyframes pulse{
+        from{background-color: blue;}
+        to{background-color: blueviolet; }
+    }
+
+
     </style>
 
 </head>
@@ -61,7 +91,7 @@
 
         <div class="col-left">
 
-            <img src="images/avatar.png" alt="Demianenco A.">
+            <img class="avatar" src="images/avatar.png" alt="Demianenco A.">
             <h2 style="border-top: 0.5px solid black;"
             >Demianenco A.</h2>
             <h3>Student</h3>
@@ -75,6 +105,9 @@
     <li><a href="http://" target="_blank" rel="noopener noreferrer">Menu</a></li>
     <li><a href="http://" target="_blank" rel="noopener noreferrer">Order</a></li>
 </ul>
+<p>
+    <a class="call" href="tel:+123456789">Call:123 456789</a>
+</p>
 
         </div>
 
